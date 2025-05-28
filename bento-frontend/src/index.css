@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme variables */
+:root {
+  --theme-soft: #b3c8cf;
+  --theme-muted: #89a8b2;
+  --theme-light: #f1f0e8;
+  --theme-deep: #2b3a42;
+}
+
+/* Theme utility classes */
+.bg-theme-soft {
+  background-color: var(--theme-soft);
+}
+.bg-theme-muted {
+  background-color: var(--theme-muted);
+}
+.bg-theme-light {
+  background-color: var(--theme-light);
+}
+.bg-theme-deep {
+  background-color: var(--theme-deep);
+}
+
+.text-theme-soft {
+  color: var(--theme-soft);
+}
+.text-theme-muted {
+  color: var(--theme-muted);
+}
+.text-theme-light {
+  color: var(--theme-light);
+}
+.text-theme-deep {
+  color: var(--theme-deep);
+}
+
+.border-theme-soft {
+  border-color: var(--theme-soft);
+}
+.border-theme-muted {
+  border-color: var(--theme-muted);
+}
+.border-theme-light {
+  border-color: var(--theme-light);
+}
+.border-theme-deep {
+  border-color: var(--theme-deep);
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Enhanced smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: var(--theme-muted) transparent;
+}
+
+/* Custom scrollbar styles */
+.scrollable-container {
+  scrollbar-color: var(--theme-muted) transparent; /* For Firefox */
+}
+
+.scrollable-container::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+  background-color: var(--theme-muted); /* Thumb color */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+  background: transparent; /* Track color */
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.3s, box-shadow 0.3s;
+  cursor: none !important;
+}
